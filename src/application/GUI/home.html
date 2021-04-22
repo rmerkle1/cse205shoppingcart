@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Making Bad</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body><div id="bg-image"></div><div id="wrapper">
+        <header>
+            <h1><a href="home.html">Making Bad</a></h1>
+            <p>Your friendly chemistry store</p>
+        </header>
+        <main>
+            <div id="first">
+                <h2><a id="login">Log in to use the application.</a></h2>
+                <form id="loginForm">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </form>
+                <a id="loginSubmit">Log in ></a>
+                <p id="loginStatus"></p>
+                <p>First time here? <a href="signup.html">Sign up.</a></p>
+            </div>
+            <div id="second">
+                <nav>
+                    <a href="shop.html">Shop</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="manage.html" class="managerOnly">Manage</a>
+                </nav>
+                <p class="info"><b>Making Bad</b> is a fake application for buying or selling chemical elements. It is collaborative project by Charles Goodwin and Ryan Merkley.</p>
+                <p class="info">The GUI is designed by Charles with HTML, CSS, and some JavaScript. The backend uses Java to run PostGreSQL commands to manage a database. JavaFX is used to display the html files and communicate between Java and JavaScript.</p>
+                <p class="info">The application is currently unfinished, but the portion of the GUI that is complete should function correctly. Some of the remaining features to implement are:</p>
+                <ul class="info">
+                    <li>completed shopface</li>
+                    <li>working shopping cart</li>
+                    <li>scripting to fill the user page with their account information</li>
+                    <li>manage page for the manager to view the database</li>
+                    <li>the Java backend</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <button id="refresh">Refresh</button>
+            <button id="doSomething">Do Something</button>
+            <button id="test">Test button</button>
+            <!-- <button id="access">Sign in/Sign out (debug)</button> -->
+        </footer>
+    </div></body>
+</html>

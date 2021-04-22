@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Making Bad :: Sign Up</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body><div id="bg-image"></div><div id="wrapper">
+        <header>
+            <h1><a href="home.html">Making Bad</a></h1>
+            <p>Your friendly chemistry store</p>
+        </header>
+        <main>
+            <h2><a id="signup">Give us your info</a></h2>
+            <form id="signupForm">
+                <label for="acctType">Account Type</label>
+                <select name="acctType" id="acctType">
+                    <option value="" disabled selected>Choose Your Account Type</option>
+                    <option value="buyer">Buyer</option>
+                    <option value="seller">Seller</option>
+                    <option value="manager">Manager</option>
+                </select>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname">
+                <label for="email">E-Mail Address</label>
+                <input type="email" name="email" id="email">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+            </form>
+            <a id="signupSubmit">Sign up ></a>
+            <p id="signupStatus"></p>
+        </main>
+        <footer>
+            <button id="refresh">Refresh</button>
+            <button id="doSomething">Do Something</button>
+            <button id="access">Sign in/Sign out (debug)</button>
+        </footer>
+    </div></body>
+</html>

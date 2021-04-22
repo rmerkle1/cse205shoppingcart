@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Making Bad</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body><div id="bg-image"></div><div id="wrapper">
+        <header>
+            <h1><a href="home.html">Making Bad</a></h1>
+            <p>Your friendly chemistry store</p>
+        </header>
+        <main>
+            <div id="first">
+                <h2><a id="login">Log in<a> to use the application.</h2>
+                <form id="loginForm">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </form>
+                <a id="loginSubmit">Log in ></a>
+                <p id="loginStatus">text here</p>
+                <p>First time here? <a href="signup.html">Sign up.</a></p>
+            </div>
+            <div id="second">
+                <nav>
+                    <a href="shop.html">Shop</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="manage.html" class="managerOnly">Manage</a>
+                </nav>
+                <table id="profileDisp">
+                    <tr id="usernameDisp">
+                        <th>Username</th>
+                        <th class="disp">this should be filled by the JavaScript</th>
+                    </tr>
+                    <tr id="usertypeDisp">
+                        <th>Account Type</th>
+                        <th class="disp">this should be filled by the JavaScript</th>
+                    </tr>
+                    <tr id="fnameDisp">
+                        <th>First Name</th>
+                        <th class="disp">this should be filled by the JavaScript</th>
+                    </tr>
+                    <tr id="lnameDisp">
+                        <th>Last Name</th>
+                        <th class="disp">this should be filled by the JavaScript</th>
+                    </tr>
+                    <tr id="emailDisp">
+                        <th>E-Mail</th>
+                        <th class="disp">this should be filled by the JavaScript</th>
+                    </tr>
+                    <tr id="balanceDisp">
+                        <th>Balance</th>
+                        <th class="disp">this should be filled by the JavaScript</th>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <button id="refresh">Refresh</button>
+            <button id="doSomething">Do Something</button>
+            <button id="access">Sign in/Sign out (debug)</button>
+        </footer>
+    </div></body>
+</html>
